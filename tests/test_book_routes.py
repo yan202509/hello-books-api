@@ -54,6 +54,7 @@ def test_create_one_book_no_title(client):
     assert response.status_code == 400
     assert response_body == {'message': 'Invalid request: missing title'}
 
+
 def test_create_one_book_no_description(client):
     # Arrange
     test_data = {"title": "New Book"}
